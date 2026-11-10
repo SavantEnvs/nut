@@ -1,0 +1,1 @@
+MONITOR myups@localhost 1 monuser secret primary

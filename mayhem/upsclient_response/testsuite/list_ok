@@ -1,0 +1,5 @@
+VAR ups
+BEGIN LIST VAR ups
+VAR ups ups.status "OL"
+VAR ups battery.charge "100"
+END LIST VAR ups

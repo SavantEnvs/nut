@@ -1,0 +1,10 @@
+project: savantenvs/nut
+target: parseconf
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/parseconf/testsuite
+cmds:
+  - cmd: /mayhem/parseconf
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/parseconf/parseconf.dict

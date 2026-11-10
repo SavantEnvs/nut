@@ -1,0 +1,10 @@
+project: savantenvs/nut
+target: hidparser
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/hidparser/testsuite
+cmds:
+  - cmd: /mayhem/hidparser
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/hidparser/hidparser.dict

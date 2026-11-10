@@ -1,0 +1,3 @@
+driver = usbhid-ups
+port = auto
+desc = "Main UPS"

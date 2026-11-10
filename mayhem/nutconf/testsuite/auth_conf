@@ -1,0 +1,5 @@
+[upsmon]
+username = monuser
+password = secret
+[main]
+foo = bar

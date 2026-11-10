@@ -1,0 +1,4 @@
+RW ups
+BEGIN LIST RW ups
+RW ups ups.delay.start "30"
+END LIST RW ups

@@ -1,0 +1,4 @@
+mayhem/build-fuzz
+mayhem/build-tests
+configure
+autom4te.cache

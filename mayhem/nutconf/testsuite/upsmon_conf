@@ -1,0 +1,11 @@
+MONITOR myups@localhost 1 monuser secret primary
+MINSUPPLIES 1
+SHUTDOWNCMD "/sbin/shutdown -h +0"
+NOTIFYCMD /usr/sbin/notify
+NOTIFYFLAG ONBATT SYSLOG+WALL
+NOTIFYMSG ONLINE "UPS %s on line power"
+POLLFREQ 5
+HOSTSYNC 15
+DEADTIME 15
+POWERDOWNFLAG /etc/killpower
+RBWARNTIME 43200

@@ -1,0 +1,10 @@
+project: savantenvs/nut
+target: upsclient_names
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/upsclient_names/testsuite
+cmds:
+  - cmd: /mayhem/upsclient_names
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/upsclient_names/upsclient_names.dict

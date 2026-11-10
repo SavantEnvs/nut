@@ -1,0 +1,10 @@
+project: savantenvs/nut
+target: nutconf
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/nutconf/testsuite
+cmds:
+  - cmd: /mayhem/nutconf
+    libfuzzer: true
+    timeout: 10
+    dictionary: /mayhem/mayhem/nutconf/nutconf.dict
